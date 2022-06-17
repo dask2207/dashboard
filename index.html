@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Remark Material Admin</title>
+    
+    <script src="bootstrap.js"></script>
+    <script src="jquery.js"></script>
+
+    
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        *{margin: 0px; box-sizing: border-box;}
+        h2{
+            padding-left: 20px;
+            padding-top: 15px;
+            color: #f1f1f1!important;
+            font-size: 1.5rem;
+        }
+        img{
+            margin-top: 10px;
+        }
+        .side-bar{
+            background-color: #4051b5;
+            width: 220px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0%;
+            left:0%;
+            transition: 0.5s;
+        }
+        nav{
+            background-color: #8391d8;
+            height: 75px;
+           
+        }
+        .side{
+            transform: translate(-100%, 0%);
+        }
+
+        .a1{
+            margin-left: 10px;
+        }
+        button{
+            
+            background-color: #8391d8;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+            height: 75px;
+            width: 50px;
+        }
+        button:hover{
+            background-color: #4051b5;
+        }
+       
+        .main-box{
+            margin-left: 220px;
+            transition: 0.5s;
+        }
+        .mar{
+            margin-left: 0px;
+        }
+
+       
+    </style>
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="icon" type="image/x-icon" href="logo.webp">
+</head>
+<body>
+    
+
+    <div class="side-bar ">
+        <!-- <div class="image">
+            <img src="logo.webp" alt="">
+        </div> -->
+       <div class="logo">
+        <h2>Remark</h2>
+       </div>
+
+    </div>
+
+    <div class="main-box">
+        <nav>
+            <button class="a1"><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </nav>
+
+        
+    </div>
+
+
+    
+
+
+    <script>
+        $(".a1").click(function(){
+            $(".side-bar").toggleClass("side")
+            $(".main-box").toggleClass("mar")
+        })
+
+       
+          
+       
+        
+    </script>
+
+</body>
+</html>
